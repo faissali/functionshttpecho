@@ -1,2 +1,2 @@
 # functionshttpecho
-Simple Echo Function
+Simple Echo Function, to store data into a storage account
