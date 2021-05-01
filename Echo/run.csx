@@ -9,7 +9,9 @@ using System.Net;
 
 public static void Run(HttpRequestMessage request, out string myOutputBlob, ILogger log)
 {
-    object requestBody = await request.Content.ReadAsAsync<object>();
+    /*object requestBody = await request.Content.ReadAsAsync<object>();
     log.LogInformation($"C# Queue trigger function processed: {requestBody}");
-    myOutputBlob = requestBody;
+    myOutputBlob = requestBody;*/
+    log.Info("C# HTTP trigger function processed a request.");
+    return req.CreateResponse(HttpStatusCode.OK, $"Current Time : {DateTime.Now}");
 }
